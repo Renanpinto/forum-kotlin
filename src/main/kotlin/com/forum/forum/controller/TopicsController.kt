@@ -12,7 +12,6 @@ import javax.validation.Valid
 @RequestMapping("/topics")
 class ForumController(private val crud: TopicService) {
 
-
     @GetMapping
     fun findAll(): List<TopicView> {
         return crud.list()
